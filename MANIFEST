@@ -1,8 +1,8 @@
 Build.PL
 Changes
-ignore.txt
 lib/Tiny/Prof.pm
 MANIFEST			This list of files
+MANIFEST.SKIP
 META.json
 META.yml
 README.md

@@ -15,6 +15,7 @@ my $class = Module::Build->subclass(
         }
     },
 );
+$class->ACTION_readme();
 
 my $builder = $class->new(
     module_name        => 'Tiny::Prof',
@@ -31,7 +32,12 @@ my $builder = $class->new(
     requires => {
         'perl' => '5.018',
     },
-    add_to_cleanup => [ 'tiny-prof-*', 'README*' ],
+    add_to_cleanup => [
+        'tiny-prof-*',
+        'MANIFEST*.bak',
+        'README*',
+        'blib/',
+    ],
     meta_merge     => {
         resources => {
             bugtracker => 'https://github.com/poti1/tiny-prof/issues',
